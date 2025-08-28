@@ -29,15 +29,15 @@ We use [`pnpm`](https://pnpm.io/) for managing dependencies.
   +
   Progress: resolved 120, reused 120, downloaded 0, added 120
   ```
-- **Add a new package:**  
+- **Add a new package:**
   ```
   pnpm add axios
   ```
-- **Remove a package:**  
+- **Remove a package:**
   ```
   pnpm remove lodash
   ```
-- **Run a script:**  
+- **Run a script:**
   ```
   pnpm run dev
   ```
@@ -68,13 +68,21 @@ To keep a clean commit history, **always use rebase** when integrating changes f
    git rebase origin/main
    ```
 3. **Resolve any conflicts, then continue:**
+
    ```
    git rebase --continue
    ```
+
 4. **Push your changes (force push if necessary):**
    ```
    git push --force-with-lease
    ```
+
+### Why Force Push?
+
+- After rebasing, your local branch history changes and no longer matches the remote branch.
+- Force pushing updates the remote branch to match your local changes.
+- It ensures your rebased commits are reflected correctly on the remote.
 
 **Do not use `git merge` for integrating changes from main.**  
 **Do not push directly to `main`.**  
