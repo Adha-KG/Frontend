@@ -8,6 +8,8 @@ import { SignUpUserSteps } from "@/components/tutorial/sign-up-user-steps";
 import { hasEnvVars } from "@/lib/utils";
 import Link from "next/link";
 
+//Hello Ighauisdg ahdishasi
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center">
